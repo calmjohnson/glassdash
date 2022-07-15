@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+[x-cloak] {
+  display: none !important;
+}
+
+.app{
+    @apply font-Poppins bg-fixed bg-no-repeat bg-center bg-cover;
+}
+
+.active{
+  @apply bg-pink-200 bg-opacity-50 border-r-4 border-pink-400;
+}
+
+.icon-active{
+  @apply shadow-pink-500 bg-white;
+}
+
+.shipped{
+  @apply bg-green-500 bg-opacity-75 text-white
+}
+
+.processing{
+  @apply bg-yellow-500 bg-opacity-75 text-white
+}
+
+.canceled{
+  @apply bg-red-500 bg-opacity-75 text-white
+}
+
+button { 
+  @apply bg-none bg-transparent border-none
+}
+
+button.is-active { 
+  @apply bg-white  
+}
+
+.ProseMirror { 
+  @apply h-40 overflow-y-scroll bg-white bg-opacity-50 py-2 px-1 outline-none rounded-b-md prose prose-slate
+}

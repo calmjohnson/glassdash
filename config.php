@@ -1,0 +1,121 @@
+<?php
+
+use Illuminate\Support\Str;
+
+return [
+    'production' => false,
+    'baseUrl' => '',
+    'siteUrl' => 'glassdash.com',
+    'title' => 'Glassdash',
+    'description' => 'Tailwind and Alpine HTML Admin Template',
+    'collections' => [],
+    'selected' => function ($page, $section) {
+        return Str::contains($page->getPath(), $section) ? 'icon-active' : '';
+    },
+    'projects' => [
+        [
+            'name' => 'Server Provisioning',
+            'image' => 'server.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 29,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+        [
+            'name' => 'Personal Site',
+            'image' => 'personal-site.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 72,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+        [
+            'name' => 'Dashboard Re-design',
+            'image' => 'web-dev.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 100,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+        [
+            'name' => 'Birthday Planning',
+            'image' => 'profile-pic-6.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 2,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+        [
+            'name' => 'Refactor UI',
+            'image' => 'product.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 50,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+        [
+            'name' => 'Photoshop Mockup',
+            'image' => 'photoshop.jpg',
+            'time' => 'Updated 6hrs ago',
+            'percent' => 15,
+            'users' => ['honeychileryder', 'felixleiter', 'xeniaonatop', 'renemathis'],
+        ],
+    ],
+    'notifications' => [
+        ['user' => 'xeniaonatop', 'description' => 'Established database connection.', 'time' => 'just now',],
+        ['user' => 'felixleiter', 'description' => 'Intercepted HTTP request', 'time' => '60 secs ago',],
+        ['user' => 'marygoodnight', 'description' => 'Exploited SQL vuneralbility', 'time' => '2 mins ago',],
+        ['user' => 'renemathis', 'description' => 'Refactored UI', 'time' => '45 mins ago',],
+    ],
+    'activities' => [
+        ['user' => 'xeniaonatop', 'description' => 'Attended to a customer issue regarding their website being down.', 'time' => '16 mins ago',],
+        ['user' => 'marygoodnight', 'description' => 'Pushed new features to production.', 'time' => '25 mins ago',],
+        ['user' => 'hollygoodhead', 'description' => 'Lauched new product for client.', 'time' => '1 hr ago',],
+        ['user' => 'felixleiter', 'description' => 'Forged new Servers', 'time' => '5 days ago',],
+    ],
+    'users' => [
+        ['name' => 'Xenia Onatop', 'username' => 'xeniaonatop', 'status' => 'online', 'photo' => 'profile-pic-3.jpg'],
+        ['name' => 'Felix Leiter', 'username' => 'felixleiter', 'status' => 'online', 'photo' => 'profile-pic-2.jpg'],
+        ['name' => 'Mary Goodnight', 'username' => 'marygoodnight', 'status' => 'offline', 'photo' => 'profile-pic-5.jpg'],
+        ['name' => 'René Mathis', 'username' => 'renemathis', 'status' => 'online', 'photo' => 'profile-pic-4.jpg'],
+        ['name' => 'Honeychile Ryder', 'username' => 'honeychileryder', 'status' => 'away', 'photo' => 'profile-pic.jpg'],
+        ['name' => 'Holly Goodhead', 'username' => 'hollygoodhead', 'status' => 'online', 'photo' => 'profile-pic-6.jpg'],
+    ],
+    'products' => [
+        [
+            'title' => 'PC Laptop',
+            'category' => 'Computer',
+            'image' => 'product.jpg',
+            'price' => '2500',
+            'description' => 'Many desktop publishing packages and web page editors now.',
+            'stars'   => 2,
+            'stock'   => 20,
+            'status'   => 'Enabled',
+        ],
+        [
+            'title' => 'Smart Phone',
+            'category' => 'Mobile',
+            'image' => 'product-2.jpg',
+            'price' => '1000',
+            'description' => 'Many desktop publishing packages and web page editors now.',
+            'stars'   => '4',
+            'stock'   => 20,
+            'status'   => 'Disabled',
+        ],
+        [
+            'title' => 'Earpiece',
+            'category' => 'Accessories',
+            'image' => 'product-3.jpg',
+            'price' => '99',
+            'description' => 'Many desktop publishing packages and web page editors now.',
+            'stars'   => 5,
+            'stock'   => 0,
+            'status'   => 'Out of stock',
+        ],
+        [
+            'title' => 'Lens Camera',
+            'category' => 'Accessories',
+            'image' => 'product-4.jpg',
+            'price' => '250',
+            'description' => 'Many desktop publishing packages and web page editors now. ',
+            'stars'   => 3,
+            'stock'   => 1000,
+            'status'   => 'Enabled',
+        ],
+    ],
+];

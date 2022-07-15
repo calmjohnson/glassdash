@@ -1,0 +1,30 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "staging": "NODE_ENV=staging mix",
+        "prod": "mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-jigsaw": "^1.5.0",
+        "postcss": "^8.2.4",
+        "postcss-import": "^14.0.0",
+        "prettier": "2.7.1",
+        "tailwindcss": "^3.0.18"
+    },
+    "dependencies": {
+        "@alpinejs/collapse": "^3.10.2",
+        "@alpinejs/focus": "^3.10.2",
+        "@alpinejs/intersect": "^3.10.2",
+        "@alpinejs/persist": "^3.10.2",
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/typography": "^0.5.2",
+        "@tiptap/core": "^2.0.0-beta.182",
+        "@tiptap/starter-kit": "^2.0.0-beta.191",
+        "alpinejs": "^3.10.2",
+        "apexcharts": "^3.35.3",
+        "fast-glob": "^3.2.11"
+    }
+}
