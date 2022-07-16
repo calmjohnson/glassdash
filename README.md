@@ -28,3 +28,7 @@ npm run dev
 npm run watch
 ```
     
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
