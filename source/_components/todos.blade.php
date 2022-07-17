@@ -61,10 +61,10 @@
                 open: false,
                 shown: false,
                 task: '',
-                todos: [],
+                todos: this.$persist([{title: 'Add a new task', status: false}]),
                 
                 init() {
-                    this.todos = JSON.parse(localStorage.getItem('storedTodos'));
+                    //this.todos = JSON.parse(localStorage.getItem('storedTodos'));
                 },
 
                 toggle() {
@@ -77,7 +77,6 @@
                     obj ["title"] = this.task;
                     obj ["status"] = false;
                     this.todos.push(obj);
-                    localStorage.setItem('storedTodos', JSON.stringify(this.todos));
                     this.open = false;
                 },
 
@@ -88,8 +87,6 @@
                     if (index > -1) { 
                         this.todos.splice(index, 1); 
                     }
-
-                    localStorage.setItem('storedTodos', JSON.stringify(this.todos));
                 },
 
                 completeTask(title, status) {
@@ -101,7 +98,6 @@
                             ? { ...todo, status: false }
                             : todo
                         );
-                        localStorage.setItem('storedTodos', JSON.stringify(updateTodos));
                     }
                     else {
                         let updateTodos = this.todos.map(todo =>
@@ -109,7 +105,6 @@
                             ? { ...todo, status: true }
                             : todo
                         );
-                        localStorage.setItem('storedTodos', JSON.stringify(updateTodos));
                     }
                     
                 },
